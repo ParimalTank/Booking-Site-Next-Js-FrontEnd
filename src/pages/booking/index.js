@@ -28,10 +28,10 @@ export default function Booking() {
 
     // console.log("value: ", value);
 
-    const date = moment(value).format("DD/MM/YYYY");
+    // const date = moment(value).format("DD/MM/YYYY");
     // console.log("date: ", date);
-    // const epoch = moment(date, "DD/MM/YYYY").unix();
-    // console.log("This is epoch", epoch);
+    const epoch = moment(value, "DD/MM/YYYY").unix();
+    console.log("This is epoch", epoch);
 
     function handleChange(event, newValue) {
         setTab(newValue);
